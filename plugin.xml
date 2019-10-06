@@ -22,7 +22,6 @@
     </platform>
 
     <platform name="ios">
-        <dependency id="cordova-plugin-cocoapod-support"/>
 
         <config-file target="config.xml" parent="/*">
             <feature name="CordovaStripe">
@@ -35,8 +34,7 @@
 
         <header-file src="src/ios/CordovaStripe.h" />
         <source-file src="src/ios/CordovaStripe.m" />
-
-        <pod id="Stripe" version="13.2.0"/>
+        <framework src="Stripe" type="podspec" spec="13.2.0" />
 
     </platform>
 
